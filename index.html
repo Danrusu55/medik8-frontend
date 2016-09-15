@@ -1,0 +1,424 @@
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MediK8 - manage orders, drivers & patients</title>
+    <meta name="description" content="manage orders, drivers & patients">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/etline-font.css">
+
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top" class="home-landing">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experienc e.</p>
+    <![endif]-->
+    <section class="hero">
+        <section class="navigation">
+            <header style="style:padding:0px;">
+                <div class="header-content">
+                    <div class="logo"><a href="/#top"><img class="img-responsive" src="images/logo.png" alt="mediK8mobile"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="/#sign-up-plans">COLLECTIVE</a></li>
+                                <li><a href="/#sign-up-plans">DRIVERS</a></li>
+                                <li><a href="/#sign-up-plans">PATIENT</a></li>
+                                <li><a href="/price.php">PRICING</a></li>
+
+                                <li><a href="/about-us.php">ABOUT US</a></li>
+                                <li><a href="/contact.php">CONTACT</a></li>
+                            </ul>
+                            <ul class="member-actions">
+
+					            <li class="dropdown btn-white-login btn-small login" id="menuLogin">
+					              <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin" aria-expanded="false">Log in</a>
+					              <div class="dropdown-menu" style="padding:17px;">
+					                <form class="form" id="formLogin" action="admin/adminlogin.php" autocomplete="off" method="POST" _lpchecked="1">
+					                  <input type="text" name="username" id="username" autocomplete="off" placeholder="Username" required="" class="form-control">
+					                  <input type="password" name="password" id="password" autocomplete="off" placeholder="Password" required="" class="form-control"><br>
+					                  <button type="submit" id="btnLogin" class="btn login-btn" name="submit">Log in</button>
+					                  <div class="btn-forgot-password"><a href="admin/forgot.php" style="font-size:11px;">Forgot Password</a></div>
+					                </form>
+					              </div>
+					            </li>
+
+                                <li class="topmenu-login"><a href="admin/adminlogin.php" class="btn-white btn-small">Log in</a></li>&nbsp;
+                                <li><a href="/admin/register.php?role_id=4" class="btn-white btn-small">Sign up</a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section class="hero-section">
+          <div class="container">
+          <div class="row hero-content">
+            <div class="col-md-8 col-sm-8">
+              <h1>Management made simple.</h1>
+            </div>
+            <div class="col-md-6 col-sm-6" style="margin-bottom:50px;">
+                    <h3>Logistics Handled.</h3>
+                    <p>Our secure HIPAA compliant software</p>
+                    <p style="padding-bottom:10px;">solution helps you manage your business.</p>
+                    <p class="herop" style="margin-top:20px;font-size:20px;"><img src="images/hero_icon_1spyglass.png" alt="" /> Monitor deliveries</p>
+                    <p class="herop"  style="font-size:20px;"><img src="images/hero_icon_2graphc.png" alt="" />  Instant Reporting</p>
+                    <p class="herop"  style="margin-bottom:20px;font-size:20px;"><img src="images/hero_icon_3uparrow.png" alt="" />  Maximize productivity</p>
+                    <a href="/admin/register.php?role_id=4" class="btn  btn-large btn-margin-right hero-btn">SIGN UP</a>
+                    <img src="images/3_apple_android.png" alt="" id="appleandroid" class="hidden-xs"/>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div style="padding:5px;">
+                    	<div class="flexslider hidden-xs">
+                     		<ul class="slides">
+                    	 		<li><img src="images/hero_computer.png" /></li>
+                    	 	  <li><img src="images/hero_phones.png" /></li>
+                    	 	</ul>
+                    	 </div>
+                    </div>
+                 </div>
+
+          </div>
+        </div>
+    </section>
+    <div class="row block1">
+      <div class="container" style="text-align:center;">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+    			<h2>An all in one tool for web based mobile devices. </h2>
+    			<h3>Maximize productivity. </h3>
+          <div class="logo-container">
+       			 <span class="logo-line"></span>
+        			<img class="block1image" src="images/1_hrlogo.png"></img>
+              <span class="logo-line"></span>
+          </div>
+    	</div>
+      	<div class="col-md-4 col-sm-4">
+      		<h4 class="text-uppercase">Manage</h4>
+                <h5>daily operations</h5>
+      	</div>
+            <div class="col-md-4 col-sm-4">
+      		<h4 class="text-uppercase">GPS</h4>
+                 <h5>tracking & route management</h5>
+      	</div>
+            <div class="col-md-4 col-sm-4">
+      		<h4 class="text-uppercase">Secure</h4>
+                <h5>patient record</h5>
+      	</div>
+      </div>
+    </div>
+    <div class="row block2">
+      <div class="" style="text-align:center;">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1>medi<span style="font-family:gotham bold;color:#b5d48b">K8</span>mobile <span style="font-family:gotham medium;color:#b5d48b">Web Portal</span></h1>
+        <h2>Management overview tool</h2>
+      </div>
+      <div class="col-md-1 col-sm-1 hidden-xs portal-column-1">
+        <div class="row">
+          <div class="block2-content portal-content-1">
+          </div>
+          <div class="block2-content portal-content-2">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="row">
+          <div class="block2-content portal-content-1">
+            <h3 class="content-text">Driver<br />Management</h3>
+            <p>
+              View your drivers GPS locations in real time. Review schedules and assign orders. Manage delivery information, track miles, and record sales history.
+            </p>
+          </div>
+          <div class="block2-content portal-content-2">
+            <h3 class="content-text">Inventory<br />Management</h3>
+            <p>
+              Get a complete overview on the web portal. Organize and manage the inventory for all of your collectives from anywhere.  Know the location of every product on the floor, in stock, and en route.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-0 portal-column-3 hidden-xs">
+        <div class="row">
+          <div class="block2-content portal-content-1-right">
+          </div>
+          <div class="block2-content portal-content-2-right">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-0 hidden-xs">
+        <img src="images/2_computers.png" style="width:100%; margin-top:-30px;" alt="" class="2_computers hidden-xs" />
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-0 portal-column-5 hidden-xs" >
+        <div class="row">
+          <div class="block2-content portal-content-3-left" style="float:right;">
+          </div>
+          <div class="block2-content portal-content-4-left" style="clear:both;float:right;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="row">
+          <div class="block2-content portal-content-3">
+            <h3 class="content-text">Patient<br />Management</h3>
+            <p>
+              Digitally store all of your patient records, memberships and collective agreements in a federally and HIPAA compliant cloud server. To protect the patient and the collective, patient history is recorded ensuring identity security as well as fraud prevention.
+            </p>
+          </div>
+          <div class="block2-content portal-content-4">
+            <h3 class="content-text">Location<br />Management</h3>
+            <p>
+              Virtually manage all of your locations, employees, patients and products from anywhere you have access to a computeror mobile device. Track the sales and overall business performance for every location individually or collectively.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <!--    block 3  -->
+
+      <div class="col-md-1 col-sm-1 col-xs-0 portal-column-7 hidden-xs">
+        <div class="row">
+          <div class="block2-content portal-content-3">
+          </div>
+          <div class="block2-content portal-content-4">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <img id="3_apple_windows" src="images/3_apple_windows.png" alt=""  />
+      </div>
+    </div>
+    </div> <!--block2 -->
+
+    <div class="row block3">
+      <div class="" style="text-align:center;">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1>medi<span style="font-family:gotham bold;color:#b5d48b">K8</span>mobile <span style="font-family:gotham medium;color:#b5d48b">App</span></h1>
+        <h2>Delivery management tool</h2>
+      </div>
+      <div class="col-md-1 col-sm-1 hidden-xs col-xs-1 app-column-1">
+        <div class="row">
+          <div class="block2-content app-content-1">
+          </div>
+          <div class="block2-content app-content-2">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="row">
+          <div class="block2-content app-content-1">
+            <h3 class="content-text">GPS Tracking &<br />Route Management</h3>
+            <p class="content-p-text">
+              Increase your travel efficiency by planning for unexpected traffic delays. Verify the best route for deliveries and record the driving data using Google Maps.
+            </p>
+          </div>
+          <div class="block2-content app-content-2">
+            <h3 class="content-text">Inventory Tracking<br />& Management</h3>
+            <p class="content-p-text">
+              Know what products you have in stock anytime, anywhere. Communicating directly to the web app, inventory is updated automatically in real-time as each transaction is completed.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 app-column-3 hidden-xs ">
+        <div class="row">
+          <div class="block2-content app-content-1-right">
+          </div>
+          <div class="block2-content app-content-2-right">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-0 hidden-xs ">
+        <img src="images/block2_gps.png" style="width:50%; margin-top:-30px; margin-bottom:20px;" class="3_iphone hidden-xs" alt="" />
+      </div>
+      <div class="col-md-1 col-sm-1 hidden-xs  app-column-5">
+        <div class="row">
+          <div class="block2-content app-content-3-left" style="float:right;">
+          </div>
+          <div class="block2-content app-content-4-left" style="clear:both;float:right;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-12">
+        <div class="row">
+          <div class="block2-content app-content-3">
+            <h3 class="content-text">Delivery Schedule<br />& History</h3>
+            <p class="content-p-text">
+              Drivers will always know their delivery schedules and sales information for every order.  Plan your schedule ahead of time and watch the delivery history update with each transaction.
+            </p>
+          </div>
+          <div class="block2-content app-content-4">
+            <h3 class="content-text">Patient Records<br />& Agreements</h3>
+            <p class="content-p-text">
+              Confidentially and securely send your patient documents to our cloud based platform. Every agreement is recorded, uploaded and stored to protect the patient and collective.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1 app-column-7 hidden-xs ">
+        <div class="row">
+          <div class="block2-content app-content-3">
+          </div>
+          <div class="block2-content app-content-4">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <img id="3_apple_windows" src="images/3_apple_android.png" alt=""  />
+      </div>
+    </div>
+    </div>
+
+    <div class="row block4">
+      <div class="container" style="text-align:center;">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <h1>Getting set up is easy.</h1>
+          <h2>Let us help.</h2>
+          <h3>medi<span style="color:#c9eda3;text-weight:bold;">K8</span>mobile offers an all in one<br /> tool for web based mobile devices</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row block5">
+      <div class="container" style="text-align:center;">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <img src="images/5_logo.png" alt="" />
+        <h1>sign up for medi<span style="color:#c9eda3;font-weight:bold;">K8</span>mobile beta</h1>
+        <form class="" action="request_for_beta.php" method="POST" >
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-0">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <input type="text" name="name" class="form-control-index" style="text-align: center;" placeholder="Enter your name">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-0">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-0">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <input type="text" name="email" class="form-control-index" style="text-align: center;" placeholder="Enter your email">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-0  ">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-0">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <button type="submit" name="button" class="btn btn-fill btn-large btn-margin-right">SIGN UP</button>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-0">
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div> <!-- Block4 -->
+
+
+    <div class="row footer">
+      <div class="container" style="text-align:center;">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <h1>ABOUT US <span style="color:#c9eda3">|</span> CONTACT</h1>
+      </div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <h2>hit us up <span style="color:#ffffff">@medi</span>K8<span style="color:#ffffff">mobile</span></h2>
+        <a href="https://www.facebook.com/medik8mobile" target="_blank"><img id="fb" src="images/footer_fb.png" alt="" style="margin:10px;"/></a>
+        <a href="https://twitter.com/mediK8mobile" target="_blank"><img  id="twitter"  src="images/footer_twitter.png" alt="" style="margin:10px;"/></a>
+        <a href="https://www.instagram.com/medik8mobile/" target="_blank"><img id="insta" src="images/footer_insta.png" alt="" style="margin:10px;"/></a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <img class="lowerlogo hidden-xs" src="images/footer_lowerlogo.png" alt="" />
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        &nbsp;
+      </div>
+    </div>
+    </div> <!-- footer -->
+
+    <div class="row copyright">
+      <div class="container">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <p>
+            Copyright © 2016 mediK8mobile, INC
+          <br />
+          License | Privacy | Terms of Service | Developed by Team Rapid</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76358309-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <!--<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>-->
+</body>
+<!-- Chatra {literal} -->
+<script>
+    ChatraID = 'qnYnx6XAmBziuTg4H';
+    (function(d, w, c) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        n.parentNode.insertBefore(s, n);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+</html>
